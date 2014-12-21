@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{491A740A-EEEA-4023-90A5-0549EAC0204E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Conglomerate</RootNamespace>
+    <AssemblyName>Conglomerate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Nikhil\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'dev|x86'">
+    <OutputPath>bin\x86\dev\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A99D987921ECC9531D649DDECE737FD9FD05D407</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Conglomerate_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbbAdvancedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbbAdvancedSettings.Designer.cs">
+      <DependentUpon>AbbAdvancedSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_User.designer.cs">
+      <DependentUpon>Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basic_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic_Details.Designer.cs">
+      <DependentUpon>Basic_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Cleansing.cs" />
+    <Compile Include="Classes\DWDatabase.cs" />
+    <Compile Include="Classes\GenDatabase.cs" />
+    <Compile Include="Classes\General.cs" />
+    <Compile Include="Classes\Logs.cs" />
+    <Compile Include="Classes\OLTPDatabase.cs" />
+    <Compile Include="Classes\Query.cs" />
+    <Compile Include="Classes\Validation.cs" />
+    <Compile Include="CleansingDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleansingDisplay.Designer.cs">
+      <DependentUpon>CleansingDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyLogs.Designer.cs">
+      <DependentUpon>CompanyLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBA.Designer.cs">
+      <DependentUpon>DBA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefineOLTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefineOLTP.Designer.cs">
+      <DependentUpon>DefineOLTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOLTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOLTP.Designer.cs">
+      <DependentUpon>DeleteOLTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.designer.cs">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicForm.Designer.cs">
+      <DependentUpon>DynamicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Execute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Execute.Designer.cs">
+      <DependentUpon>Execute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExecuteQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExecuteQuery.Designer.cs">
+      <DependentUpon>ExecuteQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChoice.Designer.cs">
+      <DependentUpon>FormChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetails.Designer.cs">
+      <DependentUpon>FormDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAs.Designer.cs">
+      <DependentUpon>LoginAs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainBackend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainBackend.Designer.cs">
+      <DependentUpon>MainBackend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapping.Designer.cs">
+      <DependentUpon>Mapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewTableDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTableDetails.Designer.cs">
+      <DependentUpon>NewTableDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewTablePrimaryKeys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTablePrimaryKeys.Designer.cs">
+      <DependentUpon>NewTablePrimaryKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoTables.Designer.cs">
+      <DependentUpon>NoTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldTableDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldTableDetails.Designer.cs">
+      <DependentUpon>OldTableDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OLTPSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OLTPSettings.Designer.cs">
+      <DependentUpon>OLTPSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpeningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpeningForm.Designer.cs">
+      <DependentUpon>OpeningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Processing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Processing.Designer.cs">
+      <DependentUpon>Processing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPassword.Designer.cs">
+      <DependentUpon>SetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Table_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Table_Details.Designer.cs">
+      <DependentUpon>Table_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitlesAdvancedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitlesAdvancedSettings.Designer.cs">
+      <DependentUpon>TitlesAdvancedSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLogs.Designer.cs">
+      <DependentUpon>ViewLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewTables.Designer.cs">
+      <DependentUpon>ViewTables.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AbbAdvancedSettings.resx">
+      <DependentUpon>AbbAdvancedSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_User.resx">
+      <DependentUpon>Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic_Details.resx">
+      <DependentUpon>Basic_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CleansingDisplay.resx">
+      <DependentUpon>CleansingDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyLogs.resx">
+      <DependentUpon>CompanyLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBA.resx">
+      <DependentUpon>DBA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineOLTP.resx">
+      <DependentUpon>DefineOLTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOLTP.resx">
+      <DependentUpon>DeleteOLTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicForm.resx">
+      <DependentUpon>DynamicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Execute.resx">
+      <DependentUpon>Execute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExecuteQuery.resx">
+      <DependentUpon>ExecuteQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChoice.resx">
+      <DependentUpon>FormChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetails.resx">
+      <DependentUpon>FormDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAs.resx">
+      <DependentUpon>LoginAs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBackend.resx">
+      <DependentUpon>MainBackend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping.resx">
+      <DependentUpon>Mapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTableDetails.resx">
+      <DependentUpon>NewTableDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewTablePrimaryKeys.resx">
+      <DependentUpon>NewTablePrimaryKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoTables.resx">
+      <DependentUpon>NoTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldTableDetails.resx">
+      <DependentUpon>OldTableDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OLTPSettings.resx">
+      <DependentUpon>OLTPSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpeningForm.resx">
+      <DependentUpon>OpeningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Processing.resx">
+      <DependentUpon>Processing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SetPassword.resx">
+      <DependentUpon>SetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Table_Details.resx">
+      <DependentUpon>Table_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitlesAdvancedSettings.resx">
+      <DependentUpon>TitlesAdvancedSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLogs.resx">
+      <DependentUpon>ViewLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTables.resx">
+      <DependentUpon>ViewTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Conglomerate_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main-background.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loading_Circle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-circle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conglomerate", "Conglomerate\Conglomerate.csproj", "{491A740A-EEEA-4023-90A5-0549EAC0204E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ConglomerateSetup", "ConglomerateSetup\ConglomerateSetup.vdproj", "{C929E098-48F3-490E-BF09-D85696FDC252}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		dev|x86 = dev|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{491A740A-EEEA-4023-90A5-0549EAC0204E}.Debug|x86.ActiveCfg = Debug|x86
+		{491A740A-EEEA-4023-90A5-0549EAC0204E}.Debug|x86.Build.0 = Debug|x86
+		{491A740A-EEEA-4023-90A5-0549EAC0204E}.dev|x86.ActiveCfg = dev|x86
+		{491A740A-EEEA-4023-90A5-0549EAC0204E}.dev|x86.Build.0 = dev|x86
+		{491A740A-EEEA-4023-90A5-0549EAC0204E}.Release|x86.ActiveCfg = Release|x86
+		{491A740A-EEEA-4023-90A5-0549EAC0204E}.Release|x86.Build.0 = Release|x86
+		{C929E098-48F3-490E-BF09-D85696FDC252}.Debug|x86.ActiveCfg = Debug
+		{C929E098-48F3-490E-BF09-D85696FDC252}.dev|x86.ActiveCfg = Debug
+		{C929E098-48F3-490E-BF09-D85696FDC252}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
